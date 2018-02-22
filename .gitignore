@@ -1,0 +1,5 @@
+.vagrant
+.idea
+*.log
+*.vdi
+/ansible/playbook.retry
