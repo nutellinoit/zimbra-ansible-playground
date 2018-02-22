@@ -25,5 +25,5 @@ apt-get update
 apt-get install -y ansible apt-transport-https curl
 ansible-galaxy install lucascbeyeler.baseline
 ansible-galaxy install lucascbeyeler.zimbra
-mv /vagrant/hosts /etc/hosts
+cp /vagrant/hosts /etc/hosts
 modprobe dm_thin_pool
