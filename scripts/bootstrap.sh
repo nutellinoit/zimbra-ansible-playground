@@ -17,7 +17,7 @@
 
 set -e
 
-echo "Instaling docker and glusterfs-client..."
+echo "Instaling..."
 apt-get update -y
 apt-get install -y software-properties-common
 apt-add-repository ppa:ansible/ansible
@@ -26,4 +26,3 @@ apt-get install -y ansible apt-transport-https curl
 ansible-galaxy install lucascbeyeler.baseline
 ansible-galaxy install lucascbeyeler.zimbra
 cp /vagrant/hosts /etc/hosts
-modprobe dm_thin_pool
